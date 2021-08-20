@@ -68,28 +68,28 @@ const Pokedex = () => {
       </div>
       <div className="pokedex__body">
         <ul className="pokemon-list">
-          {pokemonDisplayList.length ? (
-            getPaginatedList(pokemonDisplayList).map((pokemon) => {
-              return (
-                <li className="pokemon-list__item" key={pokemon.name}>
-                  <Link
-                    className="pokemon-list__item-link"
-                    to={`/pokemon/${pokemon.name}`}
-                  >
-                    <PokemonCard
-                      name={pokemon.name}
-                      number={pokemon.number}
-                      image={pokemon.image}
-                      types={pokemon.types}
-                      description={pokemon.classification}
-                    />
-                  </Link>
-                </li>
-              );
-            })
-          ) : (
-            <div>Loading...</div>
-          )}
+          {pokemonDisplayList.length
+            ? getPaginatedList(pokemonDisplayList).map((pokemon) => {
+                return (
+                  <li className="pokemon-list__item" key={pokemon.name}>
+                    <Link
+                      className="pokemon-list__item-link"
+                      to={`/pokemon/${pokemon.name}`}
+                    >
+                      <PokemonCard
+                        name={pokemon.name}
+                        number={pokemon.number}
+                        image={pokemon.image}
+                        types={pokemon.types}
+                        description={pokemon.classification}
+                      />
+                    </Link>
+                  </li>
+                );
+              })
+            : null}
+          {!pokemonDisplayList.length && !searchValue && <div>Loading...</div>}
+          {!pokemonDisplayList.length && searchValue && <div>No results</div>}
         </ul>
         <Pagination
           pageNumber={pageNumber}
