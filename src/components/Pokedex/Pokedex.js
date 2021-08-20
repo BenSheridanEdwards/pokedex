@@ -88,7 +88,7 @@ const Pokedex = () => {
               );
             })
           ) : (
-            <div>No pokemon found</div>
+            <div>Loading...</div>
           )}
         </ul>
         <Pagination
