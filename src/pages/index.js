@@ -1,5 +1,5 @@
 import React from 'react';
-import App from 'App';
+import App from '../App';
 import Pokedex from '../components/Pokedex';
 
 const IndexPage = () => {
