@@ -1,0 +1,53 @@
+{
+  "name": "pokedex",
+  "private": false,
+  "version": "1.0.0",
+  "description": "Pokedex for viewing and searching the original 150 Pokemon.",
+  "main": "index.js",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenSheridanEdwards/pokedex.git"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "author": "Ben Sheridan-Edwards <bensheridanedwards@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BenSheridanEdwards/pokedex/issues"
+  },
+  "homepage": "https://github.com/BenSheridanEdwards/pokedex#readme",
+  "dependencies": {
+    "classnames": "^2.3.1",
+    "fuse.js": "^6.4.6",
+    "gatsby": "^3.4.2",
+    "gatsby-plugin-manifest": "^3.5.0",
+    "gatsby-plugin-sass": "^4.12.0",
+    "gatsby-source-graphql": "^3.12.0",
+    "lodash.debounce": "^4.0.8",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.38.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.2.1",
+    "prop-types": "^15.7.2"
+  }
+}
