@@ -1,0 +1,56 @@
+.pokedex__header {
+  align-items: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0;
+
+  @include medium-screens-up {
+    justify-content: space-between;
+  }
+}
+
+.pokedex__body {
+  border: 4px solid #d1d5db;
+  border-radius: 12px;
+  margin-top: 20px;
+  padding: 0 0 16px 0;
+}
+
+.pokedex__footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.pokedex__image {
+  height: auto;
+  padding: 0 20px;
+  width: 300px;
+}
+
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pokemon-list__item {
+  margin-left: 12px;
+  margin-top: 12px;
+}
+
+.pokemon-list__item-link {
+  text-decoration: none;
+
+  .pokemon-card {
+    &:hover {
+      border-color: #6b7280;
+      transition: all 200ms ease-in-out;
+      transform: translateY(-4px);
+    }
+  }
+}

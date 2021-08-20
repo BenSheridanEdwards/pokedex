@@ -1,6 +1,6 @@
 import React from 'react';
 import App from '../App';
-import Pokedex from '../components/Pokedex';
+import Pokedex from '../components/Pokedex/Pokedex';
 
 const IndexPage = () => {
   return (
