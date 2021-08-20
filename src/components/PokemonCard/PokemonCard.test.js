@@ -1,11 +1,8 @@
 import * as React from 'react';
 import { render } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
 import PokemonCard from './PokemonCard';
 
-describe('Pagination', () => {
-  const mockSetPageNumber = jest.fn();
-
+describe('PokemonCard component', () => {
   const createWrapper = (extraProps = {}) => {
     return render(
       <PokemonCard

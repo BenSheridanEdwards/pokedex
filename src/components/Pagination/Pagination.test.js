@@ -3,7 +3,7 @@ import { render } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import Pagination from './Pagination';
 
-describe('Pagination', () => {
+describe('Pagination component', () => {
   const mockSetPageNumber = jest.fn();
 
   const createWrapper = (extraProps = {}) => {
