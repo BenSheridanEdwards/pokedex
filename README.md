@@ -63,3 +63,7 @@ Unit testing my components based on what the user sees and how the UI changes as
 ## To-Do
 
 - Write end-to-end tests with Cypress
+- Add focus rings to Pokemon cards
+- Add Pokeball spinner for loading state
+- Add border to search bar for mobile as the box shadow isn't showing on IOS
+- Fix list alignment on mobile
