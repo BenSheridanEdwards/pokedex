@@ -1,0 +1,19 @@
+.btn {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+
+  &:focus {
+    box-shadow: 0 0 0 3px #6dd7dd;
+    outline: none;
+    z-index: 40;
+  }
+
+  &:disabled {
+    background-color: #d1d5db;
+    border-color: #d1d5db;
+    cursor: default;
+  }
+}

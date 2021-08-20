@@ -1,0 +1,29 @@
+.card {
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.card__header {
+  align-items: flex-start;
+  display: flex;
+  width: 100%;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.card__footer {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  width: 100%;
+}
