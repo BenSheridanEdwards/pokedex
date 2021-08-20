@@ -18,6 +18,7 @@ const PokemonCard = (props) => {
           {types.map((type) => {
             return (
               <span
+                key={`${type}`}
                 className={`pokemon-card__type pokemon-card__type--${type.toLowerCase()}`}
               >
                 {type}
