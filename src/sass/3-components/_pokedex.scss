@@ -46,8 +46,20 @@
 .pokemon-list__item-link {
   text-decoration: none;
 
-  .pokemon-card {
-    &:hover {
+  &:focus {
+    outline: none;
+
+    .pokemon-card {
+      border-color: #6b7280;
+      box-shadow: 0 0 0 3px #6dd7dd;
+      transition: all 200ms ease-in-out;
+      transform: translateY(-4px);
+      z-index: 40;
+    }
+  }
+
+  &:hover {
+    .pokemon-card {
       border-color: #6b7280;
       transition: all 200ms ease-in-out;
       transform: translateY(-4px);
