@@ -56,7 +56,7 @@ const Pokedex = () => {
         <img className="pokedex__image" src={PokedexLogo} alt="Pokedex logo" />
         <SearchBar
           dataList={allOriginalPokemon}
-          placeholderText={'Search Pokemon'}
+          placeholderText={'Search Pokémon'}
           itemsPerPage={itemsPerPage}
           resetPageNumber={resetPageNumber}
           searchValue={searchValue}

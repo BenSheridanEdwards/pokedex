@@ -57,11 +57,7 @@ const SearchBar = (props) => {
         onChange={(e) => handleSearchChange(e)}
       />
 
-      <img
-        className="search-bar__image"
-        src={searchIcon}
-        alt="Search Pokemon"
-      />
+      <img className="search-bar__image" src={searchIcon} alt="Search Icon" />
     </div>
   );
 };

@@ -30,6 +30,12 @@ To run the unit tests, run:
 yarn test
 ```
 
+To run the end-to-end tests, run:
+
+```
+yarn test:e2e
+```
+
 Note about `npm` - I originally started the project with npm but ran into an error everytime I ran 'npm install'. The CLI output said a package was missing a dependancy and the missing dependancy wasn't a registered NPM package anymore. Concerned about time, I quickly switched to yarn.
 
 ## Dependencies used
@@ -59,6 +65,10 @@ I used Sass to style my components as that's what I'm used to using whilst at Bl
 #### React Testing Library & Jest
 
 Unit testing my components based on what the user sees and how the UI changes as they interact with the site.
+
+#### Cypress
+
+End-to-end testing with cypress to test the user journey using the app.
 
 ## To-Do
 
